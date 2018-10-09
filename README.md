@@ -1,7 +1,7 @@
 # yaml-cpp_build
 build **yaml-cpp** libraries and link executable with them using bazel build system
 
-1. **yaml-cpp_bazel** - build static (libyaml-cpp.a) and shared(libyaml-cpp.so) libraries using bazel
+1. **yaml-cpp_bazel** - build static (libyaml-cpp.a) and shared (libyaml-cpp.so) libraries using bazel
   * cd yaml-cpp_bazel
   * git clone https://github.com/jbeder/yaml-cpp yaml-cpp_repo
   * bazel build //:yaml-cpp
