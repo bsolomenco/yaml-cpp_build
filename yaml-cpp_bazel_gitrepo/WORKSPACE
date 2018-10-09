@@ -1,0 +1,15 @@
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "new_git_repository")
+
+new_git_repository(
+    name = "yamlcpp",
+    remote = "https://github.com/jbeder/yaml-cpp",
+    tag = "yaml-cpp-0.6.2",
+    build_file_content = """
+cc_library(
+    name = "yamlcpp",
+    srcs = glob(["include/**/*", "src/**/*",]),
+    hdrs = glob(["include/**/*"]),
+    visibility = ["//visibility:public"],
+    includes = ["include"],
+)""",
+)
