@@ -1,19 +1,4 @@
-#workspace(name = "org_tensorflow")
-
-load("@bazel_tools//tools/build_defs/repo:git.bzl", "new_git_repository")
-
-#new_git_repository(
-#    name = "yaml-cpp",
-#    remote = "https://github.com/jbeder/yaml-cpp.git",
-#    tag = "yaml-cpp-0.6.2",
-#    build_file_content = """
-#cc_library(
-#    name = "yaml-cpplib",
-#    srcs = glob(["src/*.h", "include/yaml-cpp/*.h", "src/*.cpp", "src/contrib/*"]),
-#    hdrs = glob(["include/yaml-cpp/*.h", "include/yaml-cpp/contrib/*.h", "include/yaml-cpp/node/*.h", "include/yaml-cpp/node/detail/*.h"]),
-#    visibility = ["//visibility:public"]
-#)""",
-#)
+#workspace(name = "Workspace Name")
 
 new_http_archive(
   name = "yamlcpp",
